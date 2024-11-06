@@ -1,1 +1,37 @@
 
+proxies:
+- name: ARIS1
+  type: trojan
+  server: quiz.int.vidio.com
+  port: 443
+  password: 92e87f78-a511-4b52-9a37-9386a8023e9d
+  udp: true
+  sni: sg-linode5.estebuh.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan
+
+- name: ARIS2
+  type: trojan
+  server: account.pmang.game.naver.com
+  port: 443
+  password: 92e87f78-a511-4b52-9a37-9386a8023e9d
+  udp: true
+  sni: sg-linode5.estebuh.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan
+
+- name: ARIS3
+  type: trojan
+  server: quiz.staging.vidio.com
+  port: 443
+  password: 92e87f78-a511-4b52-9a37-9386a8023e9d
+  udp: true
+  sni: sg-linode5.estebuh.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan
